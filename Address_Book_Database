@@ -1,0 +1,6 @@
+UC_1:CREATE DATBASE
+mysql> create database addressbook;
+Query OK, 1 row affected (0.35 sec)
+
+mysql> use addressbook
+Database changed

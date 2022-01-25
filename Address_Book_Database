@@ -107,3 +107,26 @@ mysql> select * from address_book order by city DESC,firstname ASC;
 |  2 | anuj      | d        | kkd_street | 878563 | drm  | ap    | 14614 | adfsxg |
 +----+-----------+----------+------------+--------+------+-------+-------+--------+
 3 rows in set (0.00 sec)
+
+UC_9:ADDING COLUMNS:
+mysql> ALTER table address_book add(name varchar(50) not null,type varchar(50) not null);
+Query OK, 0 rows affected (2.20 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc address_book;
++-----------+-------------+------+-----+---------+----------------+
+| Field     | Type        | Null | Key | Default | Extra          |
++-----------+-------------+------+-----+---------+----------------+
+| id        | int         | NO   | PRI | NULL    | auto_increment |
+| firstname | varchar(50) | NO   |     | NULL    |                |
+| lastname  | varchar(50) | NO   |     | NULL    |                |
+| address   | varchar(50) | NO   |     | NULL    |                |
+| number    | int         | NO   |     | NULL    |                |
+| city      | varchar(50) | NO   |     | NULL    |                |
+| state     | varchar(50) | NO   |     | NULL    |                |
+| zip       | int         | NO   |     | NULL    |                |
+| email     | varchar(50) | NO   |     | NULL    |                |
+| name      | varchar(50) | NO   |     | NULL    |                |
+| type      | varchar(50) | NO   |     | NULL    |                |
++-----------+-------------+------+-----+---------+----------------+
+11 rows in set (0.07 sec)

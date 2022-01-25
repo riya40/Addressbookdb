@@ -39,3 +39,18 @@ mysql> select * from address_book;
 |  4 | riyaj     | b        | abp_street | 864563 | drm  | ap    | 14257 | adbsxg |
 +----+-----------+----------+------------+--------+------+-------+-------+--------+
 4 rows in set (0.04 sec)
+
+UC_4 EDITING VALUES:
+mysql> update address_book set zip =1234 where firstname ='nisha';
+Query OK, 1 row affected (0.11 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+mysql> select * from address_book;
++----+-----------+----------+------------+--------+------+-------+-------+--------+
+| id | firstname | lastname | address    | number | city | state | zip   | email  |
++----+-----------+----------+------------+--------+------+-------+-------+--------+
+|  1 | anu       | k        | kkd_street | 878563 | kkd  | ap    |  1414 | adfsxg |
+|  2 | anuj      | d        | kkd_street | 878563 | drm  | ap    | 14614 | adfsxg |
+|  3 | nisha     | nk       | dm_street  | 878563 | rcpu | ap    |  1234 | adgvbh |
+|  4 | riyaj     | b        | abp_street | 864563 | drm  | ap    | 14257 | adbsxg |
++----+-----------+----------+------------+--------+------+-------+-------+--------+
+4 rows in set (0.01 sec)

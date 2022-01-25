@@ -54,3 +54,17 @@ mysql> select * from address_book;
 |  4 | riyaj     | b        | abp_street | 864563 | drm  | ap    | 14257 | adbsxg |
 +----+-----------+----------+------------+--------+------+-------+-------+--------+
 4 rows in set (0.01 sec)
+
+UC_5 DELETING VALUES:
+mysql> delete from address_book where firstname='riyaj';
+Query OK, 1 row affected (0.16 sec)
+
+mysql> select * from address_book;
++----+-----------+----------+------------+--------+------+-------+-------+--------+
+| id | firstname | lastname | address    | number | city | state | zip   | email  |
++----+-----------+----------+------------+--------+------+-------+-------+--------+
+|  1 | anu       | k        | kkd_street | 878563 | kkd  | ap    |  1414 | adfsxg |
+|  2 | anuj      | d        | kkd_street | 878563 | drm  | ap    | 14614 | adfsxg |
+|  3 | nisha     | nk       | dm_street  | 878563 | rcpu | ap    |  1234 | adgvbh |
++----+-----------+----------+------------+--------+------+-------+-------+--------+
+3 rows in set (0.04 sec)

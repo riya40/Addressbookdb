@@ -25,3 +25,17 @@ mysql> desc  address_book;
 | email     | varchar(50) | NO   |     | NULL    |                |
 +-----------+-------------+------+-----+---------+----------------+
 9 rows in set (0.09 sec)
+
+UC_3:INSERT VALUES:
+insert into address_book values(1,'anu','k','kkd_street',878563,'kkd','ap',1414,'adfsxg');
+insert into address_book values(2,'anuj','d','kkd_street',878563,'drm','ap',14614,'adfsxg'),(3,'nisha','nk','dm_street',878563,'rcpu','ap',14614,'adgvbh'),(4,'riyaj','b','abp_street',864563,'drm','ap',14257,'adbsxg');
+mysql> select * from address_book;
++----+-----------+----------+------------+--------+------+-------+-------+--------+
+| id | firstname | lastname | address    | number | city | state | zip   | email  |
++----+-----------+----------+------------+--------+------+-------+-------+--------+
+|  1 | anu       | k        | kkd_street | 878563 | kkd  | ap    |  1414 | adfsxg |
+|  2 | anuj      | d        | kkd_street | 878563 | drm  | ap    | 14614 | adfsxg |
+|  3 | nisha     | nk       | dm_street  | 878563 | rcpu | ap    | 14614 | adgvbh |
+|  4 | riyaj     | b        | abp_street | 864563 | drm  | ap    | 14257 | adbsxg |
++----+-----------+----------+------------+--------+------+-------+-------+--------+
+4 rows in set (0.04 sec)

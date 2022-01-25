@@ -25,6 +25,18 @@ mysql> desc  address_book;
 | email     | varchar(50) | NO   |     | NULL    |                |
 +-----------+-------------+------+-----+---------+----------------+
 9 rows in set (0.09 sec)
+mysql> update address_book set name ='gharg',type='family' where firstname ='nisha';
+Query OK, 1 row affected (0.11 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update address_book set name ='kapoor',type='friends' where firstname ='anuj';
+Query OK, 1 row affected (0.25 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update address_book set name ='smith',type='profession' where firstname ='anu';
+Query OK, 1 row affected (0.09 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
 
 UC_3:INSERT VALUES:
 insert into address_book values(1,'anu','k','kkd_street',878563,'kkd','ap',1414,'adfsxg');
